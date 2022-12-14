@@ -1,0 +1,78 @@
+.custom-switch .custom-control-label {
+    cursor: pointer;
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #64bd63;
+    border-color: #64bd63;
+}
+
+.custom-switch .custom-control-input:checked~.custom-control-label::after {
+    background-color: #ffffff;
+}
+
+.custom-switch .custom-control-label::after {
+    background-color: #ffffff;
+}
+
+/*Add class `.custom-switch-lg` to a `custom-switch`*/
+.custom-switch.custom-switch-lg {
+    padding-bottom: 1rem;
+    padding-left: 2.25rem;
+}
+.custom-switch.custom-switch-lg .custom-control-label {
+    padding-left: 0.75rem;
+    padding-top: 0.15rem;
+}
+.custom-switch.custom-switch-lg .custom-control-label::before {
+    border-radius: 1rem;
+    height: 1.5rem;
+    width: 2.5rem;
+}
+.custom-switch.custom-switch-lg .custom-control-label::after {
+    border-radius: 0.65rem;
+    height: calc(1.5rem - 4px);
+    width: calc(1.5rem - 4px);
+}
+.custom-switch.custom-switch-lg .custom-control-input:checked ~ .custom-control-label::after {
+    transform: translateX(1rem);
+}
+
+/*Add class `.custom-switch-xl` to a `custom-switch`*/
+.custom-switch.custom-switch-xl {
+    padding-bottom: 1rem;
+    padding-left: 2.25rem;
+}
+.custom-switch.custom-switch-xl .custom-control-label {
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+}
+.custom-switch.custom-switch-xl .custom-control-label::before {
+    border-radius: 1rem;
+    height: 2rem;
+    width: 3.5rem;
+}
+.custom-switch.custom-switch-xl .custom-control-label::after {
+    border-radius: 2rem;
+    height: calc(2rem - 4px);
+    width: calc(2rem - 4px);
+}
+.custom-switch.custom-switch-xl .custom-control-input:checked ~ .custom-control-label::after {
+    transform: translateX(1.5rem);
+}
+
+.img-responsive {
+    width: 80px;
+    height: 60px;
+}
+
+div.dataTables_wrapper div.dataTables_processing {
+    z-index: 1;
+}
+
+/*Media query*/
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
